@@ -17,6 +17,14 @@
         padding-right: 100px;
         background: #b9aca3;
       }
+
+
+      #menu{
+
+        margin: 8px 140px 5px 170px;
+
+
+      }
       .navbar{
         margin-left: -30px;
         margin-bottom: 0px;
@@ -42,13 +50,68 @@
         color:white;
       }
 
+      .popover {
+        position: absolute;
+
+        top: 0px;
+        margin-top: -40px;
+        left: 0;
+        z-index: 1010;
+        display: none;
+        width: 236px;
+        padding: 0px;
+        color:#5d9fce;
+        background-color: #3c3b3b;
+        border: 0px solid #ccc;
+        border: 0px solid rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 0px;
+           -moz-border-radius: 0px;
+                border-radius: 0px;
+
+      }
+
+      .popover.top .arrow {
+        bottom: -10px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #3c3b3b;
+        border-width: 10px 10px 0;
+}
+
+      .popover-title {
+        padding: 0px 0px;
+        margin: 0;
+        font-size: 0px;
+        font-weight: normal;
+        line-height: 0px;
+        background-color: #f7f7f7;
+        border-bottom: 0px solid #ebebeb;
+        -webkit-border-radius: 0px 0px 0 0;
+           -moz-border-radius: 0px 0px 0 0;
+                border-radius: 0px 0px 0 0;
+}
+
+.popover.top {
+
+  margin-bottom: -220px;
+}
+
       #grey_part{
         background-color:#333333;
         color: white;
+        padding-left: 190px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        line-height:  140px;
       }
       #white_part{
         background-color:white;
         color: black;
+        padding-left: 170px;
+        padding-right: 120px;
+        padding-top: 80px;
+        padding-bottom: 80px;
       }
 
       #white_part_first_row{
@@ -93,7 +156,12 @@
         </script>
         <script type='text/javascript'>
         $(document).ready(function(){
-            $("#examplePopover").popover();
+            $("#Adidas_Popover").popover();
+            $("#Adidas_Popover1").popover();
+            $("#Adidas_Popover2").popover();
+            $("#Adidas_Popover3").popover();
+            $("#Adidas_Popover4").popover();
+            $("#Adidas_Popover5").popover();
 
         }
         );
@@ -116,13 +184,13 @@
 
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container" id = "menu">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#"><img src = "img/tatchit_logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
 
@@ -176,15 +244,6 @@
         <div class="span4">
           <p>
              This place is built on a foundation of rock-star producers and artists: a team of committed creatives who work tirelessly to deliver <a href="#world_class">world-class production </a> with a dedication to serve that’s  </p>
-             <a href="#" id="examplePopover" rel="popover"  
-             data-content="This s" 
-             data-placement="right"
-             data-trigger = "hover"
-             data-animation = "true"
-             data-delay :{show:100, hide:100}
-              title="This is a popover">
-                Popover at meletis 
-            </a>  
           <p> <a class="btn btn-link" href="#">CHECK IT OUT</a>
               <a class="btn btn-link" href="#">GO GET YOUR FILL</a>
           </p>
@@ -193,25 +252,80 @@
       <!-- End of row 1-->
 
       <div class="row" id="grey_part">
-        <div class="span3">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-link" href="#view_details">View details &raquo;</a></p>
+        <h4><span style="font-weight:normal;">OUR CLIENTS</span></h4>
+        <div class="span3"> 
+          
+          <a href="#" id="Adidas_Popover" rel="popover"
+
+             data-content="Blabla bla bla" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "false"
+             data-delay :{show:100, hide:100}
+            >
+              <img src ="img/Adidas_logo.png">  
+              
+            </a>  
+         
         </div>
+
         <div class="span3">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-link" href="#">View details &raquo;</a></p>
+          <a href="#" id="Adidas_Popover1" rel="popover"
+
+             data-content="Blabla bla bla1" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "true"
+             data-delay :{show:100, hide:100}
+            >
+
+          <img src ="img/Adidas_logo.png">
+           </a> 
        </div>
         <div class="span3">
-          <h2>Heading</h3>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-link" href="#">View details &raquo;</a></p>
+          <a href="#" id="Adidas_Popover2" rel="popover"
+
+             data-content="Blabla bla bla2" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "true"
+             data-delay :{show:100, hide:100}
+            >          
+         <img src ="img/Adidas_logo.png">
+          </a> 
         </div>
         <div class="span3">
-          <h2>Heading</h3>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-link" href="#">View details &raquo;</a></p>
+          <a href="#" id="Adidas_Popover3" rel="popover"
+
+             data-content="Blabla bla bla 3" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "true"
+             data-delay :{show:100, hide:100}
+            >          
+          <img src ="img/Adidas_logo.png"> </a> 
+        </div>
+        <div class="span3">
+          <a href="#" id="Adidas_Popover4" rel="popover"
+
+             data-content="Blabla bla bla 4" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "true"
+             data-delay :{show:100, hide:100}
+            >          
+          <img src ="img/Adidas_logo.png"></a> 
+        </div>
+       <div class="span3">
+          <a href="#" id="Adidas_Popover5" rel="popover"
+
+             data-content="Blabla bla bla 5" 
+             data-placement="top"
+             data-trigger = "hover"
+             data-animation = "true"
+             data-delay :{show:100, hide:100}
+            >        
+          <img src ="img/Adidas_logo.png"> </a> 
         </div>
       </div>
       <!-- End of row 2-->
