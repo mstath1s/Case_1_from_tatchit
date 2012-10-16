@@ -2,150 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Tatchit test case</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Tatchit">
+    <meta name="author" content="Meletis">
 
     <!-- Le styles -->
     <link href="css/bootstrap.customize.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 59px;
-        padding-bottom: 40px;
-        padding-left: 100px;
-        padding-right: 100px;
-        background: #b9aca3;
-      }
-
-      #menu{
-        margin: 8px 140px 5px 170px;
-      }
-
-      .navbar{
-        margin-left: -30px;
-        margin-bottom: 0px;
-
-      }
-
-      .navbar-inner{
-        -webkit-border-radius: 0px;
-         -moz-border-radius: 0px;
-          border-radius: 0px;
-      }
-      .btn-link{
-        background-color: #b9aca3;
-        color:white;
-      }
-      .hero-unit{
-        background-color:#b9aca3;  
-      }
-      .btn-link:hover{
-        background-color: #5d9fce;
-        text-decoration: none;
-        color:white;
-      }
-      A:link:hover{
-        text-decoration: none;
-
-      }
-
-      .popover {
-        position: absolute;
-
-        top: 0px;
-        margin-top: -40px;
-        left: 0;
-        z-index: 1010;
-        display: none;
-        width: 236px;
-        padding: 0px;
-        color:#5d9fce;
-        background-color: #3c3b3b;
-        border: 0px solid #ccc;
-        border: 0px solid rgba(0, 0, 0, 0.2);
-        -webkit-border-radius: 0px;
-           -moz-border-radius: 0px;
-                border-radius: 0px;
-
-      }
-
-      .popover.top .arrow {
-        bottom: -10px;
-        left: 50%;
-        margin-left: -10px;
-        border-top-color: #3c3b3b;
-        border-width: 10px 10px 0;
-}
-
-      .popover-title {
-        padding: 0px 0px;
-        margin: 0;
-        font-size: 0px;
-        font-weight: normal;
-        line-height: 0px;
-        background-color: #f7f7f7;
-        border-bottom: 0px solid #ebebeb;
-        -webkit-border-radius: 0px 0px 0 0;
-           -moz-border-radius: 0px 0px 0 0;
-                border-radius: 0px 0px 0 0;
-}
-
-.popover.top {
-
-  margin-bottom: -220px;
-}
-
-      #grey_part{
-        background-color:#333333;
-        color: white;
-        padding-left: 190px;
-        padding-right: 120px;
-        padding-top: 0px;
-        padding-bottom: 30px;
-        line-height:  120px;
-      }
-      #white_part{
-        background-color:white;
-        color: black;
-        padding-left: 170px;
-        padding-right: 120px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-      }
-
-      #white_part_first_row{
-        background-color:white;
-        color: black;
-        padding-left: 170px;
-        padding-right: 120px;
-        padding-top: 80px;
-        padding-bottom: 80px; 
-      }
-      a:hover{
-         text-decoration: none;
-      }
-
-      #footer{
-        padding-left: 170px;
-        padding-right: 120px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-      }
-      #social_media_icons{
-
-        padding-top: 10px;
-      }
-
-
-
-    </style>
+    <link href="css/tatchit.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.customize.css" rel="stylesheet">
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.dotdotdot-1.5.1.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -159,6 +30,21 @@
             }
             );
         </script>
+    <script type="text/javascript" language="javascript">
+      $(function() {
+        $('#dot1').dotdotdot();
+        $('#dot2').dotdotdot();
+        $('#dot3').dotdotdot();
+        $('#dot4').dotdotdot();
+        $('#dot5').dotdotdot();
+        $('#dot6').dotdotdot();
+        $('#dotImage1').dotdotdot();
+        $('#dotImage2').dotdotdot();
+        $('#dotImage3').dotdotdot();
+                    }
+            );
+        </script>
+
         <script type='text/javascript'>
         $(document).ready(function(){
             $("#Adidas_Popover").popover();
@@ -344,42 +230,92 @@
       <!-- End of row 2-->
 
       <div class="row" id="white_part">
-        <h4>SOCIAL CHANNELS</h4>
+        <h4>SOCIAL CHANNELS</h4><br>
         <h4>INSTAGRAM</h4>
         <div class="span3">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <div id="myCarousel" class="carousel slide">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item"><img src="img/london_aerial.jpeg"><div class="carousel-caption">
+                                          <div class="r_i">
+                          <div class="box_i" id="dotImage1"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, </div></div></div></div>
+                <div class="item"><img src="img/london_aerial.jpeg"><div class="carousel-caption">Meletis</div></div>
+                <div class="item"><img src="img/london_aerial.jpeg"><div class="carousel-caption">Meletis</div></div>
+              </div>
+
+            </div>
        
         </div>
         <div class="span3">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <div id="myCarousel1" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <img src="img/london_aerial.jpeg">
+                <div class="carousel-caption">
+                        <div class="r_i">
+                          <div class="box_i" id="dotImage2"> 
+                                          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus acm cursus commodo, Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem ma </div></div>
+                  </div>    </div>                                          
+              <div class="item">…</div>
+              <div class="item">…</div>
+            </div>
+            <!-- Carousel nav -->
+
+          </div>
        </div>
         <div class="span3">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <div id="myCarousel2" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item"><img src="img/london_aerial.jpeg"><div class="carousel-caption">
+                                        <div class="r_i">
+                          <div class="box_i" id="dotImage3"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, </div></div>
+                          </div></div>
+              <div class="item">…</div>
+              <div class="item">…</div>
+            </div>
+
+          </div>
        </div>
+
 
 
       <div class="row" id="social_media_updates">
         <div class="span4">
-          <h4>FACEBOOK</h4>
+          <br>
+          <h4>FACEBOOK</h4><br>
             <table class="table table-striped">
               <tbody>
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png" width="300px" > </td>
-                       <td>    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                       <td> 
+                        <div class="r">
+                          <div class="box" id="dot1">   Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                                                      </div>
+                      </div>
                   </td>
                 </tr>
              
              
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png"></td>
-                   <td> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                   <td> 
+                                            <div class="r">
+                          <div class="box" id="dot2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                                                      </div>
+                      </div>
                   </td>
                 </tr>
               
              
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png"></td>
-                  <td>  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                  <td> 
+                                          <div class="r">
+                          <div class="box" id="dot3"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                                                      </div>
+                      </div>
                   </td>
                 </tr>
               </tbody>
@@ -389,26 +325,39 @@
         </div>
 
         <div class="span4">
-          <h4>TWITTER</h4>
+          <br><h4>TWITTER</h4><br>
             <table class="table table-striped">
               <tbody>
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png" width="300px" > </td>
-                       <td>    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                       <td> 
+                        <div class="r">
+                          <div class="box" id="dot4">
+                          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                          </div>
+                      </div>
                   </td>
                 </tr>
              
              
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png"></td>
-                   <td> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                   <td>
+                                           <div class="r">
+                          <div class="box" id="dot5"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                                                      </div>
+                      </div>
                   </td>
                 </tr>
               
              
                 <tr>
                   <td><img src = "img/tatchit_logo_grey.png"></td>
-                  <td>  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                  <td> 
+                                          <div class="r">
+                          <div class="box" id="dot6"> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                                                      </div>
+                      </div>
                   </td>
                 </tr>
               </tbody>
@@ -418,6 +367,7 @@
         </div>
 
       </div>
+
       <!-- End of row 3-->
 
 
