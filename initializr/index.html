@@ -18,17 +18,13 @@
         background: #b9aca3;
       }
 
-
       #menu{
-
         margin: 8px 140px 5px 170px;
-
 
       }
       .navbar{
         margin-left: -30px;
         margin-bottom: 0px;
-
 
       }
 
@@ -48,6 +44,10 @@
         background-color: #5d9fce;
         text-decoration: none;
         color:white;
+      }
+      A:link:hover{
+        text-decoration: none;
+
       }
 
       .popover {
@@ -101,9 +101,9 @@
         color: white;
         padding-left: 190px;
         padding-right: 120px;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 30px;
-        line-height:  140px;
+        line-height:  120px;
       }
       #white_part{
         background-color:white;
@@ -120,10 +120,10 @@
         padding-left: 170px;
         padding-right: 120px;
         padding-top: 80px;
-        padding-bottom: 80px;
-
-
-        
+        padding-bottom: 80px; 
+      }
+      a:hover{
+         text-decoration: none;
       }
 
       #footer{
@@ -133,6 +133,11 @@
         padding-bottom: 20px;
 
       }
+      #social_media_icons{
+
+        padding-top: 10px;
+      }
+
 
 
     </style>
@@ -252,7 +257,8 @@
       <!-- End of row 1-->
 
       <div class="row" id="grey_part">
-        <h4><span style="font-weight:normal;">OUR CLIENTS</span></h4>
+       <div class="span3">OUR CLIENTS </div>
+         <div class="span2 offset3">SEE ALL <i class="icon-arrow-right icon-white"></i> </div>
         <div class="span3"> 
           
           <a href="#" id="Adidas_Popover" rel="popover"
@@ -362,12 +368,15 @@
                   <ul class="nav">
                    
                     <li><a href="#got_any_questions"><span style = "color:white">GOT ANY QUESTIONS? </span></a></li>
-                    <li><a href="#ask_us_here">ASK US HERE</a></li>
-                    
-                    <li><a><img src="img/glyphicons_391_twitter_t.png" ></a></li>
-                    <li><a><img src="img/glyphicons_390_facebook.png" ></a></li>
-                   
-
+                    <li><a href="#ask_us_here">ASK US HERE <i class="icon-arrow-right icon-white"></i></a></li>
+                     <div class="span1 offset3" id="social_media_icons">
+                        <li><a><img src="img/glyphicons_391_twitter_t.png" 
+                                    onmouseover = "this.src= 'img/glyphicons_391_twitter_t_Inv.png'" 
+                                    onmouseout  = "this.src= 'img/glyphicons_391_twitter_t.png'">
+                        <img src="img/glyphicons_390_facebook.png"
+                                    onmouseover = "this.src= 'img/glyphicons_390_facebook_Inv.png'" 
+                                    onmouseout  = "this.src= 'img/glyphicons_390_facebook.png'"></a></li>              
+                      </div>
 
                 </div><!--/.nav-collapse -->
               </div>
@@ -384,17 +393,7 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/bootstrap.customize.js"></script>
-<!--    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>-->
-   <!-- <script src="js/bootstrap-typeahead.js"></script>-->
+
 
   </body>
 </html>
