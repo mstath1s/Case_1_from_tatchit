@@ -202,7 +202,17 @@
         padding-top: 40px;
         padding-bottom: 80px; 
       }
-
+      .im{
+        position: absolute;
+        top:235px;
+        left:730px;
+        line-height: 40px;
+        font-size: 60px;
+        text-align: right;
+        color: white;
+        font-family: Proximanova;
+        font-weight: bolder;
+      }
 
       h1,
       h2,
